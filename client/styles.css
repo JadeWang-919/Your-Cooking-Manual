@@ -1,0 +1,200 @@
+html {
+    font-size: 62.5%;
+}
+
+.main-container{
+    width:90%;
+    margin:2rem auto 8rem auto;
+}
+
+.frame{
+    border-radius: 2rem;
+    border: 0.4rem solid #b088d3;
+    padding: 3.2rem;
+    margin-top: 2rem;
+    width:100%;
+}
+
+.large-text{
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+    color:#222
+}
+
+
+.large-text-2{
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+    color:#7e42b2
+}
+
+.mid-text{
+    font-size: 2rem;
+    font-weight: 500;
+    color:#7e42b2;
+}
+
+.small-text{
+    font-size: 1.6rem;
+    color:#222
+}
+
+.small-text-purple{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color:#7e42b2;
+}
+
+.extrasmall-text-purple{
+    font-size: 1.6rem;
+    color:#7e42b2;
+    text-align: center;
+}
+
+input[type="text"],input[type="number"] {
+    font-size:1.6rem;
+}
+
+#submit-btn{
+    height:auto;
+    width:20rem;
+    margin: 0 auto;
+    font-size: 2rem;
+    background-color: #9763c5;
+    border: #9763c5 1px solid
+}
+
+#submit-btn:hover, #submit-btn:active{
+    background-color: #7e42b2;
+    border: #7e42b2 1px solid;
+    transition: all 0.3s;
+}
+
+.short-buttons > button {
+    height:auto;
+    width:16rem;
+    font-size: 1.6rem;
+    color:#222;
+    background-color: #fff;
+    border: #9763c5 4px solid;
+    border-radius:12px;
+}
+
+.long-buttons > button {
+    height:auto;
+    width:20rem;
+    font-size: 1.6rem;
+    color:#222;
+    background-color: #fff;
+    border: #9763c5 4px solid;
+    border-radius:12px;
+}
+
+#shopping-btn, #add-shop-btn{
+    margin-left:1.2rem
+}
+
+.buttons > button:hover, .buttons > button:active{
+    color:#fff;
+    background-color: #9763c5;
+    transition: all 0.3s;
+}
+
+/* recipe cards */
+.card-title{
+    font-size: 1.6rem;
+    color:#7e42b2;
+    font-weight:700
+}
+
+.card-text{
+    font-size: 1.4rem;
+    color:#444;
+}
+
+.card{
+    padding-bottom:0.4rem;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.pagination .page-link {
+    color: #9763c5; /* Set your desired color */
+}
+
+.pagination .page-link:hover {
+    color: #9763c5; /* Set your desired color */
+}
+
+/* Pop-ups */
+#cardModalContainer, #shoppingListContainer, #favoritesContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cardModal,#shoppingList, #favorites {
+    width: 60rem;
+    background-color: white;
+    border: 0.4rem solid #b088d3;
+    border-radius: 10px;
+    padding: 2rem;
+    position: absolute;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+#steps{
+    font-size:1.4rem;
+    line-height: 2rem;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+    font-size: 4rem;
+    color:#b088d3
+}
+
+.close:hover{
+    color:#7e42b2;
+    transition: all 0.3s;
+}
+
+/* To-do list */ 
+.form-check{
+    padding:0 !important;
+}
+
+.delete-btn{
+    background-color: #9763c5;
+    border: #9763c5 1px solid;
+    color:white;
+    border-radius:8px;
+    padding:0.5rem 0.7rem;
+}
+
+.delete-btn:hover, .delete-btn:active{
+    background-color: #7e42b2;
+    border: #7e42b2 1px solid;
+    transition: all 0.3s;
+}
+
+/* Favorites list */
+.heart-icon{
+    font-size:2.4rem;
+    position: absolute;
+}
+  
+  

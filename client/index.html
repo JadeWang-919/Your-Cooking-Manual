@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Your Cooking Manual</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+        <h1 class="large-text">Happy <span id="currentDate"></span>, let's start cooking! 😋</h1>
+        
+        <div class="frame d-flex flex-column">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between align-items-start">
+                    <p class="mid-text">Every box is optional! To enter multiple things, separate them by a comma.</p>
+                    <div class="short-buttons buttons">
+                        <button id="favorites-btn">⭐ My Favorites</button>
+                        <button id="shopping-btn">🛒 Shopping List</button>
+                    </div>
+                </div>
+                <br>
+                <div class="row gx-5">
+                    <div class="col">
+                        <label for="recipe" class="form-label small-text">Have a recipe name in mind? (e.g., hamburger)</label>
+                        <input class="form-control" id="recipe" type="text">
+                    </div>
+                    <div class="col">
+                        <label for="cuisine" class="form-label small-text">What type of cuisine? (e.g., italian)</label>
+                        <input class="form-control" id="cuisine" type="text">
+                    </div>
+                </div>
+                <div class="row mt-4 gx-5">
+                    <div class="col">
+                        <label for="include" class="form-label small-text"><strong>Include</strong> what ingredients?</label>
+                        <input class="form-control" id="include" type="text">
+                    </div>
+                    <div class="col">
+                        <label for="exclude" class="form-label small-text"><strong>Exclude</strong> what ingredients?</label>
+                        <input class="form-control" id="exclude" type="text">
+                    </div>
+                </div>
+                <div class="row mt-4 gx-5">
+                    <div class="col">
+                        <label for="equipment" class="form-label small-text">Equipment you have (e.g., shallow pan)</label>
+                        <input class="form-control" id="equipment" type="text">
+                    </div>
+                    <div class="col">
+                        <label for="time" class="form-label small-text">Have a time limit? (enter a number in minutes)</label>
+                        <input class="form-control" id="time" type="number">
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <button class="btn btn-primary" type="submit" id="submit-btn">Find Recipes</button>
+        </div>
+        <br><br>
+        <div id="result"></div>
+    </div>
+    
+    <!-- popup containers -->
+    <div id="favoritesContainer">
+        <div id="favorites">
+            <span class="close">&times;</span><br><br>
+            <p class="large-text-2">My Favorites</p>
+            <p class="extrasmall-text-purple">
+                Click on the heart icon to unlike a recipe
+            </p>
+            <br>
+            <div id="favoritesList"></div>
+        </div>
+    </div>
+    <div id="shoppingListContainer">
+        <div id="shoppingList">
+            <span class="close">&times;</span><br><br>
+            <p class="small-text-purple">
+                A list of all ingredients you need to have to cook the meal! Edit them by clicking on the text, or delete them by clicking the trash button.
+            </p>
+            <br>
+            <ul class="list-group" id="todoList">
+            </ul>
+        </div>
+    </div>
+    <div id="cardModalContainer">
+        <div id="cardModal">
+            <span class="close">&times;</span>
+            <div class="long-buttons buttons">
+                <button id="add-fav-btn">Add recipe to ⭐</button>
+                <button id="add-shop-btn">Add ingredients to 🛒</button>
+            </div>
+            <br>
+            <div id="steps">
+            </div>
+        </div>
+    </div>
+   </body>
+</html>
