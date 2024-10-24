@@ -14,6 +14,6 @@ JavaScript, Node.js with the Express framework
 
 A JSON file
 
-### External API:
+### External API
 
 spoonacular API
