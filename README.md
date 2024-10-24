@@ -1,34 +1,19 @@
-# FullStack-FinalProject-Server
+# Your Cooking Manual
 
-Final Project must be committed into main branch and an email must be sent with the link to chershbe@andrew.cmu.edu and gdobson@andrew.cmu.edu once completed.
+An individual course project for Full Stack Application Development, finished in Fall 2023. I created a solution for busy people who want to cook but lack time for finding recipes. My website offers a quick and easy recipe searching tool, helping users find their favorite recipes and identify needed ingredients effortlessly.
 
-Any special instructions for running your code must be put in a Readme file under the client and/or server folder.  (e.g. Seeding data or setting up something on first run)
+### Front-end
 
-Due no later than 11:59PM on Thursday December 14th.
+HTML, CSS, JavaScript, Bootstrap
 
-## Assignment
+### Back-end
 
-### Setup
-- Accept the assignment by clicking on the Github classroom link that will be emailed to you.
+JavaScript, Node.js with the Express framework
 
-### Part 1 (25 Points) - Client
-Put all Client code under the client folder
+### Database
 
-From the client folder
-Unless instructed in a readme the following actions will be executed to run the code:  (PLEASE TEST)
-1.  npm install
-2.  npm run server
+A JSON file
 
-### Part 2 (25 Points) - Server
-Put all Server (API) code under the server folder
+### External API:
 
-From the server folder
-Unless instructed in a readme the following actions will be executed to run the code:  (PLEASE TEST)
-1.  npm install
-2.  npm run server
-
-### Submit Final Project
-Checkin the code to your branch on Github and email the instructors that the assignment is complete.
-
----
- 
+spoonacular API
