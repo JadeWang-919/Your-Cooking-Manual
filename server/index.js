@@ -7,7 +7,7 @@ const fs = require("fs");
 const app = express();
 const port = 3002;
 
-const apiKey = "Your API Key";
+const apiKey = "6edf9f5cac6b4a7081467ffbb82819ac";
 
 const todoFilePath = "../data/todo.json";
 const favoritesFilePath = "../data/favorites.json";
@@ -19,6 +19,16 @@ app.use(
     origin: "http://localhost:3000",
   })
 );
+
+const path = require("path");
+
+// Serve static files from the client directory
+app.use(express.static(path.join(__dirname, "../client")));
+
+// Fallback to serve index.html for non-API routes
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/index.html"));
+});
 
 app.get("/recipes/complexSearch", (req, res) => {
   const queryParams = {
